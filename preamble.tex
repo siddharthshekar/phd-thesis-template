@@ -1,0 +1,42 @@
+\documentclass[letterpaper,12pt,extrafontsizes,oneside]{memoir}
+\DoubleSpacing
+
+% Load math and symbol related packages
+\usepackage{amsmath}
+\usepackage{amssymb}
+% For graphics
+\usepackage{graphicx}
+% For converting EPS images to PDF
+\usepackage{epstopdf}
+% For multi row tables
+\usepackage{multirow}
+% For enabling captions for subfigures
+\usepackage{subcaption}
+% Much better unit handling
+\usepackage[binary-units]{siunitx}
+% References
+\usepackage[numbers,sort&compress]{natbib}
+% Embed links within the PDF
+\usepackage[hidelinks=true]{hyperref}
+\usepackage[utf8x]{inputenc}
+
+% Set the horizontal and vertical margins
+\setlrmarginsandblock{1.25in}{1.25in}{*}
+\setulmarginsandblock{1in}{1in}{*}
+
+% Put page numbers at the bottom of the page
+\pagestyle{plain}
+
+% Hide bibliography and show subsections in ToC
+% \nobibintoc
+\maxtocdepth{subsection}
+
+% Number subsections
+\setsecnumdepth{subsection}
+
+% Chapter style
+\chapterstyle{ger}
+
+% Apply layout changes
+\checkandfixthelayout
+

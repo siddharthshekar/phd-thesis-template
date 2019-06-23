@@ -1,0 +1,53 @@
+#+TITLE: Columbia GSAS PhD thesis template
+
+This template can be used as a starting point for writing your PhD thesis when
+submitting to Columbia's Graduate School of Arts and Sciences. The general
+document structure is as follows:
+
+- root
+  - abstract.tex
+  - acknowledgements.tex
+  - copyright.tex
+  - library.bib
+  - main.tex
+  - preamble.tex
+  - references.tex
+  - title.tex
+  - chapters
+    - 1
+      - main.tex
+      - img
+        - img1.png
+        - img2.png
+    - 2
+      - main.tex
+      - img
+        - img1.png
+        - img2.png
+
+ The function of these tex files is listed below:
+
+ - abstract.tex :: Edit the existing lorem ipsum dummy text to fill in your
+      abstract.
+ - acknowledgements.tex :: Edit the existing lorem ipsum dummy text to fill in
+      your acknowledgements.
+ - copyright.tex :: Edit the year that the thesis is published. See also this
+      page on [[https://gsas.columbia.edu/student-guide/dissertation/formatting-guidelines][formatting guidelines]].
+ - library.bib :: I use this name but you are free to use any other name that
+      you would like for your references file. Make sure to also edit the
+      corresponding line in references.tex.
+ - main.tex :: Does not need to be changed for the most part except when
+      adding/removing chapters. This is the master file that you will need to
+      run LaTeX on.
+ - preamble.tex :: Contains all the ~\usepackage~ calls as well as formatting
+      information.
+ - references.tex :: Edit the argument to the ~\bibliography~ command if you are
+      using a file not named ~library.bib~ as your references file.
+ - title.tex :: Edit the thesis title and your name as well as the year in which
+      the degree is conferred. Note that this may be different from the year in
+      which the thesis is deposited. See [[https://gsas.columbia.edu/student-guide/dissertation/formatting-guidelines][this page]].
+
+ I like to create a new folder for each chapter. Each of these folders contains
+  a ~main.tex~ and an ~img~ folder. Note the ~\graphicspath~ command in the
+  sample ~main.tex~ files. This temporarily changes the include path for images
+  to point to the ~img~ folder in that directory.

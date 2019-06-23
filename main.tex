@@ -1,0 +1,24 @@
+\input{preamble.tex}
+\input{title.tex}
+\begin{document}
+\maketitle
+\include{copyright}
+\include{abstract}
+\frontmatter
+%TOC
+\tableofcontents*
+%List of figures
+\pagebreak
+\listoffigures
+\pagebreak
+%List of tables
+\listoftables
+\include{acknowledgements}
+\mainmatter
+%Chapter 1
+\include{chapters/1/main}
+%Chapter 2
+\include{chapters/2/main}
+\backmatter
+\include{references}
+\end{document}
